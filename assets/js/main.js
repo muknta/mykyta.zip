@@ -181,4 +181,94 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     registerServiceWorker();
+
+    // Calculate period durations
+    const periodElements = document.querySelectorAll('.period');
+    
+    periodElements.forEach(function(element) {
+        const dateText = element.previousElementSibling.innerText;
+        const dates = parseDateRange(dateText);
+        
+        if (dates) {
+            const duration = calculateDuration(dates.startDate, dates.endDate);
+            element.textContent = formatDuration(duration);
+        }
+    });
+    
+    function parseDateRange(dateText) {
+        // Extract dates from format like:
+        // "February 2024 – present" or 
+        // "February 2021 – August 2021" or
+        // "July 2022 – 2024" (just year for end date)
+        const dateRegex = /([A-Za-z]+)\s+(\d{4})\s+[–-]\s+(?:([A-Za-z]+)\s+(\d{4})|(\d{4})|present)/;
+        const matches = dateText.match(dateRegex);
+        
+        if (!matches) return null;
+        
+        const startMonth = getMonthNumber(matches[1]);
+        const startYear = parseInt(matches[2]);
+        
+        let endMonth, endYear;
+        
+        if (matches[3] && matches[4]) {
+            // Full end date is specified (Month Year)
+            endMonth = getMonthNumber(matches[3]);
+            endYear = parseInt(matches[4]);
+        } else if (matches[5]) {
+            // Only year is specified for end date
+            endMonth = 11; // December
+            endYear = parseInt(matches[5]);
+        } else {
+            // "present" is used - use current date
+            const now = new Date();
+            endMonth = now.getMonth();
+            endYear = now.getFullYear();
+        }
+        
+        return {
+            startDate: new Date(startYear, startMonth, 1),
+            endDate: new Date(endYear, endMonth, 1)
+        };
+    }
+    
+    function getMonthNumber(monthName) {
+        const months = {
+            'january': 0,
+            'february': 1,
+            'march': 2,
+            'april': 3,
+            'may': 4,
+            'june': 5,
+            'july': 6,
+            'august': 7,
+            'september': 8,
+            'october': 9,
+            'november': 10,
+            'december': 11
+        };
+        
+        return months[monthName.toLowerCase()];
+    }
+    
+    function calculateDuration(startDate, endDate) {
+        const yearDiff = endDate.getFullYear() - startDate.getFullYear();
+        const monthDiff = endDate.getMonth() - startDate.getMonth();
+        
+        const totalMonths = yearDiff * 12 + monthDiff + 1;
+        
+        return {
+            years: Math.floor(totalMonths / 12),
+            months: totalMonths % 12
+        };
+    }
+    
+    function formatDuration(duration) {
+        if (duration.years === 0) {
+            return `${duration.months} month${duration.months !== 1 ? 's' : ''}`;
+        } else if (duration.months === 0) {
+            return `${duration.years} year${duration.years !== 1 ? 's' : ''}`;
+        } else {
+            return `${duration.years} year${duration.years !== 1 ? 's' : ''} ${duration.months} month${duration.months !== 1 ? 's' : ''}`;
+        }
+    }
 });
