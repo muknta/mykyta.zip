@@ -517,7 +517,7 @@ article {
   position: relative;
   display: block;
   flex: 1 0 auto;
-  max-width: 15rem;
+  max-width: 25rem;
   width: 100%;
 }
 @media only screen and (max-width: 1199px) {
@@ -593,26 +593,20 @@ article {
   color: black;
   transition: color 0.2s ease-in-out;
 }
-.contacts li a.facebook:hover {
-  color: #3b5998;
-}
 .contacts li a.github:hover {
   color: dimgrey;
 }
 .contacts li a.mail:hover {
   color: dimgrey;
 }
-.contacts li a.skype:hover {
-  color: #00aff0;
-}
 .contacts li a.linkedin:hover {
   color: #0077b5;
 }
+.contacts li a.signal:hover {
+  color: dimgrey;
+}
 .contacts li a.telegram:hover {
   color: #0088cc;
-}
-.contacts li a.phone:hover {
-  color: dimgrey;
 }
 .contacts li a.website {
   display: none;
@@ -637,6 +631,23 @@ article {
   .contacts {
     margin-top: 1em;
     flex-direction: column;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wave {
+    width: 5%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wave {
+    width: 4%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wave {
+    width: 3%;
   }
 }
 
@@ -839,11 +850,11 @@ li.bordered > ul > details > div {
   vertical-align: top;
   position: relative;
 }
-.color.midnightblue:before {
-  background-color: midnightblue;
+.color.saffron:before {
+  background-color: #FF9933;
 }
-.color.chartreuse:before {
-  background-color: chartreuse;
+.color.erin:before {
+  background-color: #00FF40;
 }
 
 /* Audio button */
@@ -854,11 +865,38 @@ button.audio {
   border: none;
   margin: 0;
   padding: 0;
+  transition: all 0.3s ease;
 }
 button.audio svg {
   height: 16px;
   width: 16px;
   vertical-align: text-top;
+  fill: currentColor;
+    transition: fill 0.3s ease;
+  }
+  
+  button.audio.playing {
+    color: #ff6b00;
+    transform: scale(1.05);
+  }
+  
+  button.audio.playing svg {
+    fill: #ff6b00;
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.1);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
 }
 
 /* Resume */
