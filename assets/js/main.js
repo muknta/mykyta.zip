@@ -244,7 +244,19 @@ document.addEventListener('DOMContentLoaded', () => {
             'september': 8,
             'october': 9,
             'november': 10,
-            'december': 11
+            'december': 11,
+            'січень': 0,
+            'лютий': 1,
+            'березень': 2,
+            'квітень': 3,
+            'травень': 4,
+            'червень': 5,
+            'липень': 6,
+            'серпень': 7,
+            'вересень': 8,
+            'жовтень': 9,
+            'листопад': 10,
+            'грудень': 11,
         };
         
         return months[monthName.toLowerCase()];

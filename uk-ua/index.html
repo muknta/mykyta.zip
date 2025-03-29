@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="uk-ua" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6XYE2E8TT3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6XYE2E8TT3');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="My very own personal website.">
+    <meta name="google-site-verification" content="JSXHc5R4b0LTgmCgl1pO59m6T8NOPE4p3oEkQdx-cB8">
+    <meta name="google" content="nositelinkssearchbox">
+    <meta name="google" content="notranslate">
+    <meta name="googlebot" content="index,follow">
+    <meta name="robots" content="index,follow">
+    <meta name="subject" content="This is just a résumé.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="white">
+    <meta property="og:description" content="&mdash; I'm a skilled Software Engineer with 6+ years of experience in mobile / desktop / web application development, backend development, database modeling.
+    I have always wanted to help my employers succeed in their business by being deeply involved in the processes and development.
+    I am proud of my impact on every company I have worked in.
+    I am seeking a project that would be extremely helpful for Ukrainian citizens.">
+    <meta property="og:image:alt" content="Screenshot of the homepage">
+    <meta property="og:image:height" content="1800">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="2880">
+    <meta property="og:image" content="https://mykyta.zip/assets/images/og-image.en_US.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Mykyta Sadchenko &mdash; Résumé">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mykyta.zip/">
+    <!-- <base href="https://mykyta.zip/"> TODO:::: -->
+    <title>Микита Садченко &mdash; Резюме</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./assets/images/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="./assets/images/apple-touch-icon.png">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="me" href="mailto:mykyta.sadchenko@gmail.com">
+    <link rel="stylesheet" href="./assets/stylesheets/base.css">
+    <style>
+        #office-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            z-index: 1000;
+            max-width: 500px;
+            width: 90%;
+            display: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #office-popup img {
+            max-width: 100%;
+            display: block;
+            margin: 20px auto 10px;
+        }
+
+        #office-popup-close {
+            float: right;
+            cursor: pointer;
+            font-weight: bold;
+            color: #666;
+            text-decoration: underline;
+        }
+
+        #office-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            display: none;
+        }
+
+        .office-clickable {
+            cursor: pointer;
+            text-decoration: underline;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="office-overlay"
+        onclick="this.style.display = 'none'; document.getElementById('office-popup').style.display = 'none';"></div>
+    <div id="office-popup">
+        <span id="office-popup-close"
+            onclick="document.getElementById('office-popup').style.display = 'none'; document.getElementById('office-overlay').style.display = 'none';">Close</span>
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjhnZzIzanMzZzBrOHNobzJkdXYwNTlmdm9xc2NwZ2V0Y2p3NzZrYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5wWf7H89PisM6An8UAU/giphy.gif"
+            alt="Office reaction GIF">
+    </div>
+
+    <header>
+        <div class="credits">
+            Ідея та створення використовуючи <a href="https://volodymyrkushnir.dev/" rel="external"><strong>Резюме
+                    Володимира Кушнира</strong></a>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="page" style="border-color: midnightblue;">
+                <div class="stackable grid">
+                    <div class="row">
+                        <div class="four wide center aligned column">
+                            <div class="avatar-wrapper">
+                                <img class="avatar" src="./assets/images/mykyta.sadchenko.jpg" alt="My profile picture"
+                                    aria-label="My profile picture">
+                            </div>
+                        </div>
+                        <div class="twelve wide column">
+                            <div class="stackable grid">
+                                <div class="sixteen wide column">
+                                    <h1 class="name">Микита Садченко</h1>
+                                    <ul class="contacts">
+                                        <li>
+                                            <a href="https://linkedin.com/in/muknta" rel="author" class="linkedin">
+                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 448 512">
+                                                    <path
+                                                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                                </svg>
+                                                <span>muknta</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/muknta" rel="author" class="github">
+                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 496 512">
+                                                    <path
+                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                                </svg>
+                                                <span>muknta</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://signal.me/#eu/pd9KxZyEgvWWpWDcIQYAi_otgIeCajqfW2YZtcNvlPeAR-9ScEVD2pipQBKGIqsi"
+                                                rel="author" class="signal">
+                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="currentColor"
+                                                        d="M12.012 2.598c-5.22 0-9.452 3.9-9.452 8.709 0 3.016 1.219 5.301 3.155 6.774H5.71l.234 3.042v.004c0 .017 0 .031.004.046v.006c.024.144.15.255.301.255.053 0 .1-.015.144-.035l.011-.008L9.3 19.717c.854.196 1.767.299 2.71.299 5.22 0 9.452-3.899 9.452-8.71 0-4.81-4.233-8.709-9.454-8.709l.004.001zM10.39.72c.525-.065 1.061-.104 1.605-.104.38 0 .75.02 1.119.052l.057-.614C12.781.019 12.392 0 11.997 0c-.57 0-1.135.036-1.691.109l.083.612.001-.001zm3.797.094c.915.165 1.785.436 2.61.795l.252-.567c-.132-.056-.263-.112-.397-.165-.762-.3-1.551-.524-2.355-.671l-.11.608zm9.169 10.556c-.015.915-.155 1.806-.405 2.655l.59.175c.267-.903.416-1.854.431-2.831l-.616.001zM6.745 1.814c.811-.389 1.678-.698 2.586-.902L9.196.308c-.631.141-1.251.329-1.853.569-.297.117-.586.245-.867.381l.269.556zm13.65 1.399c-.706-.649-1.485-1.207-2.329-1.673l-.311.541c.811.445 1.561.981 2.224 1.596l.416-.462v-.002zm-5.244 18.838c.945-.24 1.845-.591 2.686-1.03l-.315-.533c-.786.413-1.631.738-2.521.967l.15.596zM3.677 4.005c.63-.638 1.347-1.2 2.13-1.675l-.327-.529c-.698.422-1.35.914-1.945 1.473-.102.094-.2.191-.3.289l.439.441.003.001zm19.48 11.28l-.568-.236c-.349.833-.803 1.614-1.354 2.332l.495.369c.577-.758 1.061-1.586 1.424-2.465h.003zM20.726 4.433c.606.675 1.122 1.425 1.534 2.228l.555-.275c-.435-.852-.979-1.645-1.627-2.366l-.465.413h.003zm2.554 3.003l-.568.244c.313.828.521 1.703.604 2.61l.615-.061c-.088-.956-.305-1.892-.651-2.793zM6.386 22.849l-.969.425-.332-1.025-.585.19.438 1.347c.029.083.09.151.167.188.041.017.083.026.126.026s.084-.009.123-.026l1.283-.563-.251-.562zm3.823-1.193c-.078-.016-.157-.027-.237-.041l-.465-.079c-.061-.009-.12 0-.172.023l-1.951.853.271.554 1.845-.803c.125.021.25.041.371.059.068.017.139.026.209.038l.129-.604zm3.728.02c-.633.104-1.281.156-1.942.156-.273 0-.525-.015-.772-.038l-.019.615c.251.024.511.04.791.04.698 0 1.383-.058 2.048-.166l-.104-.606-.002-.001zM1.517 7.116c.37-.825.852-1.598 1.425-2.302l-.47-.407c-.61.745-1.116 1.557-1.508 2.427l-.01.021.563.261zM20.532 18.21c-.612.651-1.31 1.229-2.07 1.728l.339.515c.806-.524 1.541-1.14 2.19-1.829l-.459-.414zM.97 14.551c-.188-.796-.293-1.676-.323-2.671H.031c.03 1.071.145 2.005.345 2.843l.594-.172zM.538 7.925c-.297.91-.468 1.853-.51 2.813l.615.03c.042-.923.209-1.816.487-2.662l-.592-.181zm4.199 13.26l-.59-1.815c-.02-.06-.056-.109-.105-.147-.232-.182-.449-.366-.66-.558l-.422.446c.194.184.408.362.629.541l.561 1.717.587-.184zm-2.105-3.292c-.591-.691-1.037-1.449-1.355-2.315l-.573.229c.041.107.083.216.126.322.33.796.771 1.509 1.342 2.175l.46-.411z" />
+                                                </svg>
+                                                <span>mykyta.12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://t.me/muknta" rel="author" class="telegram">
+                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 448 512">
+                                                    <path fill="currentColor"
+                                                        d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
+                                                    </path>
+                                                </svg>
+                                                <span>muknta</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:mykyta.sadchenko@gmail.com" rel="author" class="mail">
+                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 512 512">
+                                                    <path
+                                                        d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                                                    </path>
+                                                </svg>
+                                                <span>mykyta.sadchenko@gmail.com</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://mykyta.zip/" rel="author" class="website">
+                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 496 512">
+                                                    <path fill="currentColor"
+                                                        d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z">
+                                                    </path>
+                                                </svg>
+                                                <span>https://mykyta.zip/</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sixteen wide mobile only column">
+                                    <div class="divider"></div>
+                                </div>
+                                <div class="sixteen wide column">
+                                    <div><img src="./assets/images/wave.gif" class="wave"> Привіт!</div>
+                                    <p>Я досвідчений розробник з більш ніж 6-річним
+                                        досвідом у розробці мобільних / десктопних / веб-додатків, розробці бекенду,
+                                        моделюванні баз даних.</p>
+                                    <p>Я завжди прагнув допомогти своїм роботодавцям досягти успіху в їхньому бізнесі,
+                                        будучи глибоко залученим у процеси та розробку. Я пишаюся своїм впливом
+                                        на кожну компанію, в якій я працював.</p>
+                                    </p>Я шукаю проєкт, який буде надзвичайно корисним для українських
+                                    громадян.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="sixteen wide column">
+                            <div class="fat divider"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="ten wide column">
+                            <section>
+                                <h3>Досвід</h3>
+                                <h6>Тепер</h6>
+                                <ul class="timeline">
+                                    <li class="highlighted">
+                                        <p><em>Серпень 2023 – тепер</em> <sup class="period"></sup></p>
+                                        <p><strong>Senior Software Engineer</strong> в <strong><a
+                                                    href="https://haltia.ai" rel="external">Haltia.AI</a></strong></p>
+                                        <ol class="inverted">
+                                            <li>
+
+                                                <p><em>Лютий 2024 – тепер</em> <sup class="period"></sup></p>
+                                                <p><strong>Senior Software Engineer</strong></p>
+                                                <p>Субпродукт стартапу, який є революційним офлайн-помічником на базі
+                                                    ШІ,
+                                                    Asimov, що допомагає спростити особисте та ділове життя.</p>
+                                                <ul>
+                                                    <li>Інтеграція системних сервісів з використанням нативного коду
+                                                        (Swift, Kotlin)
+                                                    </li>
+                                                    <li>Реалізація та інтеграція плагінів Rust з використанням FFI</li>
+                                                    <li>Інтеграційне та UI тестування з використанням Patrol</li>
+                                                    <li>Розробка складних інтерфейсів з використанням CustomPainter та
+                                                        Flame</li>
+                                                    <li>Налаштування та керування CI/CD (GitHub Actions)</li>
+                                                    <li>Перегляд архітектури</li>
+                                                    <li class="details">
+                                                        <input type="checkbox" id="haltia-tech-stack">
+                                                        <label for="haltia-tech-stack" class="summary">Технічний
+                                                            стек</label>
+                                                        <div>
+                                                            <br>
+                                                            <div>Мови:</div>
+                                                            <div class="labels">
+                                                                <div class="label">Dart (Flutter)</div>
+                                                                <div class="label">Rust</div>
+                                                                <div class="label">Swift</div>
+                                                                <div class="label">Kotlin</div>
+                                                            </div>
+                                                            <br>
+                                                            <br>
+                                                            <div>Технології:</div>
+                                                            <div class="labels">
+                                                                <div class="label">Flame</div>
+                                                                <div class="label">Patrol</div>
+                                                                <div class="label">gRPC</div>
+                                                                <div class="label">GraphQL</div>
+                                                                <div class="label">Firebase</div>
+                                                            </div>
+                                                            <br>
+                                                            <br>
+                                                            <div>Платформи:</div>
+                                                            <div class="labels">
+                                                                <div class="label">iOS</div>
+                                                                <div class="label">macOS</div>
+                                                                <div class="label">watchOS</div>
+                                                                <div class="label">Android</div>
+                                                                <div class="label">Linux</div>
+                                                            </div>
+                                                            <br>
+                                                            <br>
+                                                            <div>Інтеграції:</div>
+                                                            <div class="labels">
+                                                                <div class="label">Siri</div>
+                                                                <div class="label">Google/Microsoft services</div>
+                                                                <div class="label">Twitter</div>
+                                                                <div class="label">Bonjour service</div>
+                                                                <div class="label">built-in TTS & STT</div>
+                                                                <div class="label">biometrics</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p><em>Серпень 2023 – Лютий 2024</em> <sup class="period"></sup></p>
+                                                <p><strong>Senior Full-Stack Engineer</strong> в <strong><a
+                                                            href="https://conreality.com"
+                                                            rel="external">Conreality</a></strong>
+                                                    (субстартап)</p>
+                                                <p>Субпродукт стартапу, який є геопросторовим інструментом для
+                                                    додаткового
+                                                    досвіду під час гри в пейнтбол та страйкбол.</p>
+                                                <ul>
+                                                    <li>Led the mobile development team</li>
+                                                    <li>Revised architecture</li>
+                                                    <li>Planned project tasks</li>
+                                                    <li>Managed CI/CD Інтеграції</li>
+                                                    <li>Developed new features</li>
+                                                    <li class="details">
+                                                        <input type="checkbox" id="conreality-tech-stack">
+                                                        <label for="conreality-tech-stack" class="summary">Технічний
+                                                            стек</label>
+                                                        <div>
+                                                            <br>
+                                                            <div>Мови:</div>
+                                                            <div class="labels">
+                                                                <div class="label">Dart (Flutter)</div>
+                                                                <div class="label">Go</div>
+                                                            </div>
+                                                            <br>
+                                                            <br>
+                                                            <div>Технології:</div>
+                                                            <div class="labels">
+                                                                <div class="label">BLoC</div>
+                                                                <div class="label">AutoRoute</div>
+                                                                <div class="label">gRPC</div>
+                                                                <div class="label">WebRTC</div>
+                                                                <div class="label">Google Maps API</div>
+                                                                <div class="label">Firebase</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                                <h6>Раніше</h6>
+                                <ul class="timeline">
+                                    <li>
+                                        <p><em>Липень 2022 – 2024</em> <sup class="period"></sup></p>
+                                        <p><strong>Senior Mobile Full-Stack Engineer</strong> (Part-time) в <strong><a
+                                                    href="https://play.google.com/store/apps/details?id=zusim.app.zusim&hl=en"
+                                                    rel="external">Zusim</a></strong>
+                                        </p>
+                                        <p>Платформа для навчання українських військових з пріоритетом на офлайн-роботу
+                                            та безпеку
+                                            (мобільний додаток).</p>
+                                        <ul>
+                                            <li>Засетапив архітектуру з пріоритетом на безпеку</li>
+                                            <li>Керував розгортанням на iOS та Android</li>
+                                            <li>Проводив співбесіди</li>
+                                            <li>Розробляв нові функції</li>
+                                            <li>Надавав консультації</li>
+                                            <li class="details">
+                                                <input type="checkbox" id="zusim-tech-stack">
+                                                <label for="zusim-tech-stack" class="summary">Tech Stack</label>
+                                                <div>
+                                                    <br>
+                                                    <div>Мови:</div>
+                                                    <div class="labels">
+                                                        <div class="label">Dart (Flutter)</div>
+                                                    </div>
+                                                    <br>
+                                                    <br>
+                                                    <div>Технології:</div>
+                                                    <div class="labels">
+                                                        <div class="label">BLoC</div>
+                                                        <div class="label">Dio</div>
+                                                        <div class="label">AutoRoute</div>
+                                                        <div class="label">SQLite</div>
+                                                        <div class="label">Firebase</div>
+                                                        <div class="label">HTML parsing</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <p><em>Червень 2023 – Серпень 2023</em> <sup class="period"></sup></p>
+                                        <p><strong>Senior Software Engineer</strong> в <strong><a
+                                                    href="https://nodeart.io/en" rel="external"></a>NodeArt</a></strong>
+                                        </p>
+                                        <p><em>(Короткотермінова робота, проєкт зупинено)</em> Додаток для знайомств <a
+                                                href="https://olo.live/" rel="external">(Olo)</a> з
+                                            обробкою відео та чату. Проєкт має
+                                            сильну
+                                            стратегію
+                                            in-app-payments
+                                            користувачами.</p>
+                                        <ul>
+                                            <li>Покращив UX платежів, збільшивши конверсію грошей на 20%</li>
+                                            <li>Розробив логіку та інтерфейс текстового чату, забезпечивши комунікацію
+                                                користувачів без відео</li>
+                                            <li>Покращив UX сторінок відеотрансляцій</li>
+                                            <li>Оновив архітектуру</li>
+                                            <li>Зменшив кількість помилок, покращивши показники залученості</li>
+                                            <li class="details">
+                                                <input type="checkbox" id="nodeart-tech-stack">
+                                                <label for="nodeart-tech-stack" class="summary">Tech Stack</label>
+                                                <div>
+                                                    <br>
+                                                    <div>Мови:</div>
+                                                    <div class="labels">
+                                                        <div class="label">Dart (Flutter)</div>
+                                                    </div>
+                                                    <br>
+                                                    <br>
+                                                    <div>Технології:</div>
+                                                    <div class="labels">
+                                                        <div class="label">GetX</div>
+                                                        <div class="label">GraphQL</div>
+                                                        <div class="label">WebRTC</div>
+                                                        <div class="label">Sockets</div>
+                                                        <div class="label">Firebase</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p><em>Квітень 2022 – Червень 2023</em> <sup class="period"></sup></p>
+                                        <p><strong>Senior Software Engineer</strong> в <strong><a
+                                                    href="https://n-ix.com/" rel="external">N-iX</a></strong>
+                                        </p>
+                                        <p>Фінансовий онлайн B2C + B2B банк для <a href="https://akart.az/"
+                                                rel="external">Azercell</a> - найбільшої
+                                            телекомунікаційної компанії в
+                                            Азербайджані.</p>
+                                        <ol class="inverted">
+                                            <li>
+                                                <p><em>Жовтень 2022 – Червень 2023</em> <sup class="period"></sup></p>
+                                                <p><strong>Senior Flutter Engineer</strong></p>
+                                                <ul>
+                                                    <li>Розробив банківські додатки B2C та B2B з нуля (етапи MVP, MMP,
+                                                        Release+)</li>
+                                                    <li>Скоротив час входу в додаток на 90% за допомогою біометрії</li>
+                                                    <li>Забезпечив комунікацію між двома банківськими додатками (B2C +
+                                                        B2B) через QR-сканер</li>
+                                                    <li>Автоматизував скрипти для зменшення часу розгортання додатку на
+                                                        10%</li>
+                                                    <li>Інтегрував шаблони коду для підвищення ефективності розробки
+                                                    </li>
+                                                    <li>Підключив бібліотеку контактів до додатку, скоротивши час
+                                                        P2P-транзакцій на 90%</li>
+                                                    <li class="details">
+                                                        <input type="checkbox" id="nix-senior-tech-stack">
+                                                        <label for="nix-senior-tech-stack" class="summary">Технічний
+                                                            стек</label>
+                                                        <div>
+                                                            <br>
+                                                            <div>Мови:</div>
+                                                            <div class="labels">
+                                                                <div class="label">Dart (Flutter)</div>
+                                                            </div>
+                                                            <br>
+                                                            <br>
+                                                            <div>Технології:</div>
+                                                            <div class="labels">
+                                                                <div class="label">BLoC</div>
+                                                                <div class="label">Dio</div>
+                                                                <div class="label">mason-template/code generation</div>
+                                                                <div class="label">easy_localizations</div>
+                                                                <div class="label">Firebase</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p><em>Квітень 2022 – Жовтень 2022</em> <sup class="period"></sup></p>
+                                                <p><strong>Middle Flutter Engineer</strong></p>
+                                                <ul>
+                                                    <li>Розробив банківські додатки B2C та B2B з нуля (етап MVP)</li>
+                                                    <li>Реалізував основні функціональні можливості</li>
+                                                    <li>Розробив компоненти інтерфейсу</li>
+                                                    <li class="details">
+                                                        <input type="checkbox" id="nix-middle-tech-stack">
+                                                        <label for="nix-middle-tech-stack" class="summary">Технічний
+                                                            стек</label>
+                                                        <div>
+                                                            <br>
+                                                            <div>Мови:</div>
+                                                            <div class="labels">
+                                                                <div class="label">Dart (Flutter)</div>
+                                                            </div>
+                                                            <br>
+                                                            <br>
+                                                            <div>Технології:</div>
+                                                            <div class="labels">
+                                                                <div class="label">BLoC</div>
+                                                                <div class="label">Dio</div>
+                                                                <div class="label">easy_localizations</div>
+                                                                <div class="label">Firebase</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p><em>Лютий 2021 – Квітень 2022</em> <sup class="period"></sup></p>
+                                        <p><strong>Flutter Developer</strong> в <strong><a
+                                                    href="https://mobiteach.ltd/products/" rel="external">MobiTeach
+                                                    LLC</a></strong></p>
+                                        <p>Освітні додатки для вивчення різних мов через інтерактивні вправи.
+                                            Також включає ігрову
+                                            мотивацію з підрахунком результатів, поступове відкриття тем тощо.</p>
+                                        <ol class="inverted">
+                                            <li>
+                                                <p><em>August 2021 – April 2022</em> <sup class="period"></sup></p>
+                                                <p><strong>Project's Lead Flutter Developer</strong></p>
+                                                <ul>
+                                                    <li>Координував та очолював проєкт</li>
+                                                    <li>Проводив менторинг та співбесіди</li>
+                                                    <li>Оновив архітектуру</li>
+                                                    <li>Використовував Google Analytics для A/B тестування</li>
+                                                    <li>Налаштував CI/CD через Codemagic</li>
+                                                    <li class="details">
+                                                        <input type="checkbox" id="mobiteach-lead-tech-stack">
+                                                        <label for="mobiteach-lead-tech-stack" class="summary">Технічний
+                                                            стек</label>
+                                                        <div>
+                                                            <br>
+                                                            <div>Мови:</div>
+                                                            <div class="labels">
+                                                                <div class="label">Dart (Flutter)</div>
+                                                                <div class="label">Java (Android)</div>
+                                                                <div class="label">Swift (iOS)</div>
+                                                            </div>
+                                                            <br>
+                                                            <br>
+                                                            <div>Технології:</div>
+                                                            <div class="labels">
+                                                                <div class="label">BLoC</div>
+                                                                <div class="label">RxDart</div>
+                                                                <div class="label">SembastDB (NoSQL)</div>
+                                                                <div class="label">local_notifications</div>
+                                                                <div class="label">Firebase tools</div>
+                                                                <div class="label">Provider</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p><em>Лютий 2021 – Серпень 2021</em> <sup class="period"></sup></p>
+                                                <p><strong>Flutter Developer</strong></p>
+                                                <ul>
+                                                    <li>Розробив основні функції додатку</li>
+                                                    <li>Реалізував компоненти інтерфейсу</li>
+                                                    <li>Виправив помилки та оптимізував продуктивність</li>
+                                                    <li class="details">
+                                                        <input type="checkbox" id="mobiteach-dev-tech-stack">
+                                                        <label for="mobiteach-dev-tech-stack" class="summary">Технічний
+                                                            стек</label>
+                                                        <div>
+                                                            <br>
+                                                            <div>Мови:</div>
+                                                            <div class="labels">
+                                                                <div class="label">Dart (Flutter)</div>
+                                                            </div>
+                                                            <br>
+                                                            <br>
+                                                            <div>Технології:</div>
+                                                            <div class="labels">
+                                                                <div class="label">BLoC</div>
+                                                                <div class="label">RxDart</div>
+                                                                <div class="label">SembastDB (NoSQL)</div>
+                                                                <div class="label">Firebase tools</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p><em>Січень 2021 – Квітень 2021</em> <sup class="period"></sup></p>
+                                        <p><strong>Full-Stack Engineer (Web3 + Flutter)</strong> в <strong><a
+                                                    href="https://www.stobox.io/" rel="external">Stobox</a></strong>
+                                        </p>
+                                        <p>Крипто-платформа для веб та мобільних пристроїв</p>
+                                        <ul>
+                                            <li>Писав смарт-контракти</li>
+                                            <li>Розробляв макети інтерфейсу</li>
+                                            <li class="details">
+                                                <input type="checkbox" id="stobox-tech-stack">
+                                                <label for="stobox-tech-stack" class="summary">Tech Stack</label>
+                                                <div>
+                                                    <br>
+                                                    <div>Мови:</div>
+                                                    <div class="labels">
+                                                        <div class="label">Go</div>
+                                                        <div class="label">Dart (Flutter)</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p><em>Вересень 2020 – Лютий 2021</em> <sup class="period"></sup></p>
+                                        <p><strong>Flutter Developer</strong> в <strong><a href="https://devsteam.mobi/"
+                                                    rel="external">Devsteam.mobi</a></strong></p>
+                                        <p>Додаток з цитатами на основі Firebase</p>
+                                        <ul>
+                                            <li>Розробив бізнес-логіку</li>
+                                            <li>Проєктував та реалізував інтерфейс</li>
+                                            <li>Розгорнув додаток на Android</li>
+                                            <li>Рефакторинг застарілого коду</li>
+                                            <li class="details">
+                                                <input type="checkbox" id="devsteam-tech-stack">
+                                                <label for="devsteam-tech-stack" class="summary">Tech Stack</label>
+                                                <div>
+                                                    <br>
+                                                    <div>Мови:</div>
+                                                    <div class="labels">
+                                                        <div class="label">Dart (Flutter)</div>
+                                                    </div>
+                                                    <br>
+                                                    <br>
+                                                    <div>Технології:</div>
+                                                    <div class="labels">
+                                                        <div class="label">BLoC</div>
+                                                        <div class="label">HTTP</div>
+                                                        <div class="label">UDP</div>
+                                                        <div class="label">Notifications</div>
+                                                        <div class="label">Firebase</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p><em>Червень 2018 – Вересень 2020</em> <sup class="period"></sup></p>
+                                        <p><strong>Python Developer / Full-Stack Developer</strong> at
+                                            <strong>Freelance</strong>
+                                        </p>
+                                        <p>Різні проєкти з бекенду і повного стеку, інженерія даних, веб-скрапінг,
+                                            задачі з Telegram-ботами.</p>
+                                        <ul>
+                                            <li>Створював бекенд і фронтенд рішення</li>
+                                            <li>Проводив аналіз даних і веб-скрапінг</li>
+                                            <li>Розробляв ботів для Telegram</li>
+                                            <li class="details">
+                                                <input type="checkbox" id="freelance-tech-stack">
+                                                <label for="freelance-tech-stack" class="summary">Tech Stack</label>
+                                                <div>
+                                                    <br>
+                                                    <div>Мови:</div>
+                                                    <div class="labels">
+                                                        <div class="label">Python</div>
+                                                        <div class="label">JavaScript</div>
+                                                    </div>
+                                                    <br>
+                                                    <br>
+                                                    <div>Технології:</div>
+                                                    <div class="labels">
+                                                        <div class="label">Django</div>
+                                                        <div class="label">Flask</div>
+                                                        <div class="label">NumPy</div>
+                                                        <div class="label">Pandas</div>
+                                                        <div class="label">SQLAlchemy</div>
+                                                        <div class="label">BeautifulSoup</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="six wide column">
+                            <section>
+                                <h3>Мови</h3>
+                                <p class="tags small"><span class="language" lang="uk">&#x1f1fa;&#x1f1e6;
+                                        УКРАЇНСЬКА</span> (C2) <a href="/" hreflang="en" rel="alternate"
+                                        class="language" lang="en">&#x1f1fa;&#x1f1f8;
+                                        <span>ENGLISH</span></a> (B2)</p>
+                            </section>
+                            <section>
+                                <h3>Хард скіли</h3>
+                                <h6>Мови (в роках)</h6>
+                                <p class="tags small bulleted">
+                                    <span class="tag">Dart (5+)</span>
+                                    <span class="tag">Python (2+)</span>
+                                    <span class="tag">Swift (1+)</span>
+                                    <span class="tag">Java (1+)</span>
+                                    <span class="tag">JavaScript (1+)</span>
+                                    <span class="tag">Kotlin</span>
+                                    <span class="tag">Rust</span>
+                                    <span class="tag">Go</span>
+                                </p>
+                                <h6>Інструменти Flutter</h6>
+                                <p class="tags small bulleted">
+                                    <span class="tag">Flutter (5+ років)</span>
+                                    <span class="tag">BLoC</span>
+                                    <span class="tag">GetX</span>
+                                    <span class="tag">Flame</span>
+                                    <span class="tag">CustomPainter</span>
+                                    <span class="tag">Patrol (інтеграційні тести)</span>
+                                    <span class="tag">Retrofit</span>
+                                    <span class="tag">RxDart</span>
+                                    <span class="tag">Provider</span>
+                                    <span class="tag">MobX</span>
+                                    <span class="tag">SembastDB</span>
+                                    <span class="tag">SQFlite</span>
+                                </p>
+                                <h6>Інструменти Python</h6>
+                                <p class="tags small bulleted">
+                                    <span class="tag">Django</span>
+                                    <span class="tag">Flask</span>
+                                    <span class="tag">NumPy</span>
+                                    <span class="tag">Pandas</span>
+                                    <span class="tag">Socket</span>
+                                    <span class="tag">SQLAlchemy</span>
+                                </p>
+                                <h6>Бази даних</h6>
+                                <p class="tags small bulleted">
+                                    <span class="tag">SQLite</span>
+                                    <span class="tag">PostgreSQL</span>
+                                    <span class="tag">MySQL</span>
+                                    <span class="tag">MongoDB</span>
+                                    <span class="tag">SembastDB (NoSQL)</span>
+                                </p>
+                                <h6>Парадигми / Концепції</h6>
+                                <p class="tags small bulleted">
+                                    <span class="tag">OOP</span>
+                                    <span class="tag">Design Patterns</span>
+                                    <span class="tag">Data Structures</span>
+                                </p>
+                                <h6>Інструменти</h6>
+                                <p class="tags small bulleted">
+                                    <span class="tag">macOS</span>
+                                    <span class="tag">Linux</span>
+                                    <span class="tag">Vim</span>
+                                    <span class="tag">Git</span>
+                                </p>
+                                <h6>Мережеві технології</h6>
+                                <p class="tags small bulleted">
+                                    <span class="tag">WebSockets</span>
+                                    <span class="tag">GraphQL</span>
+                                    <span class="tag">gRPC</span>
+                                    <span class="tag">REST API</span>
+                                    <span class="tag">WebRTC</span>
+                                    <span class="tag">UDP</span>
+                                </p>
+                                <h6>API та Інтеграції</h6>
+                                <p class="tags small bulleted">
+                                    <span class="tag">Google Maps API</span>
+                                    <span class="tag">Rust/C FFI</span>
+                                    <span class="tag">AdMob</span>
+                                    <span class="tag">Firebase</span>
+                                    <span class="tag">Siri</span>
+                                    <span class="tag">Google/Microsoft services</span>
+                                    <span class="tag">Twitter</span>
+                                    <span class="tag">Bonjour service</span>
+                                    <span class="tag">TTS & STT</span>
+                                    <span class="tag">Biometrics</span>
+                                </p>
+                                <h6>CI/CD</h6>
+                                <p class="tags small bulleted">
+                                    <span class="tag">GitHub Actions</span>
+                                    <span class="tag">GitLab CI</span>
+                                    <span class="tag">Codemagic</span>
+                                </p>
+                                <h6>Платформи</h6>
+                                <p class="tags small bulleted">
+                                    <span class="tag">iOS</span>
+                                    <span class="tag">macOS</span>
+                                    <span class="tag">watchOS</span>
+                                    <span class="tag">Android</span>
+                                    <span class="tag">Linux</span>
+                                </p>
+                            </section>
+                            <section>
+                                <h3>Софт скіли</h3>
+                                <h4>Характер</h4>
+                                <p class="tags small bulleted">
+                                    <span class="tag"><a href="https://www.16personalities.com/istj-personality"
+                                            rel="external">ЛОГІК (ISTJ)</a></span>
+                                    <span class="tag">НАДІЙНИЙ</span>
+                                    <span class="tag">ПАТРІОТИЧНИЙ</span>
+                                    <span class="tag">ПРАЦЬОВИТИЙ</span>
+                                    <span class="tag">КОМФОРТНИЙ</span>
+                                    <span class="tag">ЧУДОВИЙ СЛУХАЧ</span>
+                                </p>
+                                <h4>Подобається &#x1f603;</h4>
+                                <p class="tags small bulleted">
+                                    <span class="tag">ФУТБОЛ</span>
+                                    <span class="tag">НАСТІЛЬНИЙ ТЕНІС</span>
+                                    <span class="tag">ПСИХОЛОГІЯ</span>
+                                    <span class="tag">ПОДОРОЖІ</span>
+                                    <span class="tag">ПРОБУВАТИ НОВЕ</span>
+                                    <span class="tag office-clickable" id="office-tag"
+                                        onclick="document.getElementById('office-popup').style.display = 'block'; document.getElementById('office-overlay').style.display = 'block';">СЕРІАЛ
+                                        THE OFFICE</span>
+                                    <span class="tag"><button id="erin" class="color tag erin">ЖАБИ</button></span>
+                                    <span class="tag"><button id="saffron"
+                                            class="color tag saffron">ОСІНЬ</button></span>
+                                    <span class="tag">
+                                        <button id="masya-audio" class="audio" onclick="playMasya()">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                <path
+                                                    d="M576 256c0 100.586-53.229 189.576-134.123 239.04-7.532 4.606-17.385 2.241-21.997-5.304-4.609-7.539-2.235-17.388 5.304-21.997C496.549 424.101 544 345.467 544 256c0-89.468-47.452-168.101-118.816-211.739-7.539-4.609-9.913-14.458-5.304-21.997 4.608-7.539 14.456-9.914 21.997-5.304C522.77 66.424 576 155.413 576 256zm-96 0c0-66.099-34.976-124.572-88.133-157.079-7.538-4.611-17.388-2.235-21.997 5.302-4.61 7.539-2.236 17.388 5.302 21.998C418.902 152.963 448 201.134 448 256c0 54.872-29.103 103.04-72.828 129.779-7.538 4.61-9.912 14.459-5.302 21.998 4.611 7.541 14.462 9.911 21.997 5.302C445.024 380.572 480 322.099 480 256zm-138.14-75.117c-7.538-4.615-17.388-2.239-21.998 5.297-4.612 7.537-2.241 17.387 5.297 21.998C341.966 218.462 352 236.34 352 256s-10.034 37.538-26.841 47.822c-7.538 4.611-9.909 14.461-5.297 21.998 4.611 7.538 14.463 9.909 21.998 5.297C368.247 314.972 384 286.891 384 256s-15.753-58.972-42.14-75.117zM256 88.017v335.964c0 21.436-25.942 31.999-40.971 16.971L126.059 352H24c-13.255 0-24-10.745-24-24V184c0-13.255 10.745-24 24-24h102.059l88.971-88.954C230.037 56.038 256 66.551 256 88.017zm-32 19.311l-77.659 77.644A24.001 24.001 0 0 1 129.372 192H32v128h97.372a24.001 24.001 0 0 1 16.969 7.028L224 404.67V107.328z" />
+                                            </svg>
+                                            МАСЯ
+                                        </button>
+                                    </span>
+                                </p>
+                                <h4>Не подобається &#x1f61e;</h4>
+                                <p class="tags small bulleted">
+                                    <span class="tag">ЗАРОЗУМІЛІСТЬ</span>
+                                    <span class="tag">БЕЗПРИНЦИПНІ ЛЮДИ</span>
+                                </p>
+                            </section>
+                            <section>
+                                <h3>Освіта</h3>
+                                <ul class="timeline">
+                                    <li>
+                                        <div><em>2023 &ndash; 2024</em></div>
+                                        <div><strong>Магістерський ступінь в Комп'ютерних наук</strong> в <a
+                                                href="https://lnu.edu.ua/en/" rel="external"><strong>Львівському
+                                                    національному університеті</strong></a></div>
+                                    </li>
+                                    <li>
+                                        <div><em>2017 &ndash; 2021</em></div>
+                                        <div><strong>Бакалаврський ступінь в Прикладній математиці</strong> в <a
+                                                href="https://kpi.ua/en" rel="external"><strong>Київському
+                                                    політехнічному
+                                                    інституті</strong></a></div>
+                                        <p>Програма / Навички:</p>
+                                        <ul class="details">
+                                            <li>Python, C/C++, JavaScript</li>
+                                            <li>Комп'ютерні науки</li>
+                                            <li>Наука про дані</li>
+                                            <li>Прикладна математика</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <em>Дякую за Ваш час!</em>
+    </footer>
+
+    <!-- Hidden audio element for playing sounds -->
+    <audio id="masya-sound" preload="none" playsinline>
+        <source src="./assets/sounds/masya.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="./assets/js/main.js" defer></script>
+</body>
+
+</html>
