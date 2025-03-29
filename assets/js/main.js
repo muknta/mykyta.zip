@@ -187,11 +187,12 @@ document.addEventListener('DOMContentLoaded', () => {
     
     periodElements.forEach(function(element) {
         const dateText = element.previousElementSibling.innerText;
+        const isUkrainian = dateText.match(/[а-яА-ЯіІїЇєЄ]/) !== null;
         const dates = parseDateRange(dateText);
         
         if (dates) {
             const duration = calculateDuration(dates.startDate, dates.endDate);
-            element.textContent = formatDuration(duration);
+            element.textContent = formatDuration(duration, isUkrainian);
         }
     });
     
@@ -200,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // "February 2024 – present" or 
         // "February 2021 – August 2021" or
         // "July 2022 – 2024" (just year for end date)
-        const dateRegex = /([A-Za-z]+)\s+(\d{4})\s+[–-]\s+(?:([A-Za-z]+)\s+(\d{4})|(\d{4})|present)/;
+        const dateRegex = /([A-Za-zа-яА-ЯіІїЇєЄ]+)\s+(\d{4})\s+[–-]\s+(?:([A-Za-zа-яА-ЯіІїЇєЄ]+)\s+(\d{4})|(\d{4})|present|дотепер)/;
         const matches = dateText.match(dateRegex);
         
         if (!matches) return null;
@@ -274,13 +275,13 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     }
     
-    function formatDuration(duration) {
+    function formatDuration(duration, isUkrainian) {
         if (duration.years === 0) {
-            return `${duration.months} month${duration.months !== 1 ? 's' : ''}`;
+            return isUkrainian ? `${duration.months} ${duration.months === 1 ? 'місяць' : duration.months === 2 || duration.months === 3 || duration.months === 4 ? 'місяці' : 'місяців'}` : `${duration.months} month${duration.months !== 1 ? 's' : ''}`;
         } else if (duration.months === 0) {
-            return `${duration.years} year${duration.years !== 1 ? 's' : ''}`;
+            return isUkrainian ? `${duration.years} ${duration.years === 1 ? 'рік' : duration.years === 2 || duration.years === 3 || duration.years === 4 ? 'роки' : 'років'}` : `${duration.years} year${duration.years !== 1 ? 's' : ''}`;
         } else {
-            return `${duration.years} year${duration.years !== 1 ? 's' : ''} ${duration.months} month${duration.months !== 1 ? 's' : ''}`;
+            return isUkrainian ? `${duration.years} ${duration.years === 1 ? 'рік' : duration.years === 2 || duration.years === 3 || duration.years === 4 ? 'роки' : 'років'} ${duration.months} ${duration.months === 1 ? 'місяць' : duration.months === 2 || duration.months === 3 || duration.months === 4 ? 'місяці' : 'місяців'}` : `${duration.years} year${duration.years !== 1 ? 's' : ''} ${duration.months} month${duration.months !== 1 ? 's' : ''}`;
         }
     }
 });
