@@ -902,6 +902,29 @@ button.audio svg {
     }
 }
 
+.pdf-download {
+  text-align: right;
+  margin-bottom: 15px;
+  padding: 10px;
+  position: relative;
+  z-index: 5;
+}
+
+.pdf-download a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: midnightblue;
+  font-weight: 500;
+}
+
+.pdf-download a:hover {
+  text-decoration: underline;
+}
+
+.pdf-download img {
+  margin-right: 8px;
+}
 /* Resume */
 #resume {
   color: inherit;
