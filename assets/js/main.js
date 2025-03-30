@@ -1,5 +1,20 @@
+// Function to track language selection
+function trackLanguageSelection(language) {
+    gtag('event', 'language_selection', {
+        'language': language
+    });
+}
+
+// Function to track color switch
+function trackSwitchColor(color) {
+    gtag('event', 'switch_color', {
+        'color': color
+    });
+}
+
 const switchToColor = (color, jsConfetti) => {
     try {
+        trackSwitchColor(color);
 
         // Skip avatar SVG modification as it's not an SVG
         // Just handle the confetti and highlighting
@@ -80,6 +95,7 @@ function playMasya() {
     }
 }
 
+
 // Global jsConfetti instance to be used across the site
 let jsConfetti;
 
@@ -104,6 +120,12 @@ window.addEventListener('load', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log("DOMContentLoaded event fired");
+
+    // Get the current URL path
+    const path = window.location.pathname;
+    // Determine language based on URL
+    const language = path.includes('/uk-ua') ? 'uk-UA' : 'en-US';
+    trackLanguageSelection(language);
     
     // Try again to initialize JSConfetti if it hasn't been done already
     if (!jsConfetti) {
