@@ -12,6 +12,11 @@ function trackSwitchColor(color) {
     });
 }
 
+// Function to track color switch
+function trackMasyaCalled() {
+    gtag('event', 'play_masya');
+}
+
 const switchToColor = (color, jsConfetti) => {
     try {
         trackSwitchColor(color);
@@ -74,7 +79,8 @@ const registerServiceWorker = async () => {
 
 function playMasya() {
     console.log('playMasya function called directly');
-
+    trackMasyaCalled();
+    
     try {
         var audioPath = './assets/sounds/masya.mp3';
         var audio = new Audio(audioPath);
