@@ -608,6 +608,9 @@ article {
 .contacts li a.telegram:hover {
   color: #0088cc;
 }
+.contacts li a.location:hover {
+  color: #ffc400;
+}
 .contacts li a.website {
   display: none;
 }
