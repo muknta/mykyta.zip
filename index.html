@@ -253,13 +253,18 @@
                                                     assistant,
                                                     Asimov, that helps simplify personal and business life.</p>
                                                 <ul>
-                                                    <li>Integration of system services using native code (Swift, Kotlin)
-                                                    </li>
-                                                    <li>Implementation and integration of Rust plugins using FFI</li>
-                                                    <li>Integration & UI testing using Patrol and Appium</li>
-                                                    <li>Complex UI development using CustomPainter and Flame</li>
-                                                    <li>Setup and management of CI/CD (GitHub Actions)</li>
-                                                    <li>Architecture revisioning</li>
+                                                    <li>Integration of system services using native code (Swift, Kotlin)</li>
+                                                    <li>Refactored AI model downloading logic related to FFI</li>
+                                                    <li>Created a relationships graph (similar to Obsidian) using Flame, then refactored it using CustomPainter</li>
+                                                    <li>Implemented online TTS in chat</li>
+                                                    <li>Refactored offline Apple TTS integration</li>
+                                                    <li>Wrote extensive unit tests for business and UI logic</li>
+                                                    <li>Wrote integration tests (Patrol, Appium) for the main app flows, including chat interaction and LLM model
+                                                        downloading</li>
+                                                    <li>Developed a Rust TTS module and integrated it into desktop and mobile apps via FFI</li>
+                                                    <li>Set up CI/CD using GitHub Actions and custom build commands for local builds</li>
+                                                    <li>Worked on adaptive design, including a hide/show sidebar feature for desktop</li>
+                                                    <li>Implemented and refactored numerous chat and related logic features for mobile and desktop apps</li>
                                                     <li class="details">
                                                         <input type="checkbox" id="haltia-tech-stack">
                                                         <label for="haltia-tech-stack" class="summary">Tech
@@ -318,11 +323,12 @@
                                                     additional
                                                     experience while playing paintball and airsoft.</p>
                                                 <ul>
-                                                    <li>Led the mobile development team</li>
-                                                    <li>Revised architecture</li>
-                                                    <li>Planned project tasks</li>
-                                                    <li>Managed CI/CD integrations</li>
-                                                    <li>Developed new features</li>
+                                                    <li>Led a mobile team of two other developers</li>
+                                                    <li>Collaborated with the backend team to set up an event-driven architecture using gRPC</li>
+                                                    <li>Worked a lot with Google Maps API</li>
+                                                    <li>Revised the existing mobile app architecture</li>
+                                                    <li>Implemented various features related to maps and supporting logic</li>
+                                                    <li>Contributed to backend development in Go during bottlenecks on the backend side</li>
                                                     <li class="details">
                                                         <input type="checkbox" id="conreality-tech-stack">
                                                         <label for="conreality-tech-stack" class="summary">Tech
@@ -363,11 +369,13 @@
                                             (<a href="https://play.google.com/store/apps/details?id=zusim.app.zusim&hl=en" rel="external">Android</a> + <a
                                                 href="https://apps.apple.com/us/app/%D0%B7%D1%83%D1%81%D1%96%D0%BC/id6448213970" rel="external">iOS</a>).</p>
                                         <ul>
-                                            <li>Set up a security-based architecture</li>
-                                            <li>Managed iOS & Android deployment</li>
-                                            <li>Conducted interviews</li>
-                                            <li>Developed new features</li>
-                                            <li>Provided consulting</li>
+                                            <li>Developed the entire iOS and Android app from scratch, including offline-first architecture discussions with
+                                                colleagues and the backend team</li>
+                                            <li>Worked extensively with SQL</li>
+                                            <li>Conducted interviews and provided consulting</li>
+                                            <li>Deployed both Android and iOS apps</li>
+                                            <li>Set up CI/CD using GitHub Actions and Fastlane</li>
+                                            <li>Contributed to backend development in Node.js during backend bottlenecks</li>
                                             <li class="details">
                                                 <input type="checkbox" id="zusim-tech-stack">
                                                 <label for="zusim-tech-stack" class="summary">Tech Stack</label>
@@ -406,10 +414,9 @@
                                             for
                                             in-app-payments.</p>
                                         <ul>
-                                            <li>Improved UX of payments, increasing money conversion by 20%</li>
-                                            <li>Developed text chat logic & UI, enabling user communication without
-                                                video</li>
-                                            <li>Enhanced UX of video streaming pages</li>
+                                            <li>Improved the UX of the payment flow by adjusting ad timing and popup behavior</li>
+                                            <li>Developed text chat logic and UI, enabling communication without video</li>
+                                            <li>Enhanced the video streaming page UX by optimizing rebuilds and caching essential settings</li>
                                             <li>Revised architecture</li>
                                             <li>Reduced bugs, improving engagement metrics</li>
                                             <li class="details">
@@ -450,13 +457,15 @@
                                                 <ul>
                                                     <li>Built B2C & B2B banking apps from scratch (MVP, MMP, GA
                                                         stages)</li>
-                                                    <li>Reduced app login time by 90% using Biometrics</li>
-                                                    <li>Enabled communication between two banking apps (B2C + B2B) via
-                                                        QR scanner</li>
-                                                    <li>Automated scripts to reduce app deployment time by 10%</li>
-                                                    <li>Integrated code templates to improve development efficiency</li>
-                                                    <li>Connected contacts library to app, reducing P2P transaction time
-                                                        by 90%</li>
+                                                    <li>Set up CI/CD using GitLab CI and Fastlane</li>
+                                                    <li>Added Mason templates for easy creation of UI logic and service files</li>
+                                                    <li>Integrated Google Pay and Apple Pay</li>
+                                                    <li>Integrated the contact list for peer-to-peer transactions</li>
+                                                    <li>Implemented a passcode screen with Biometrics' caching</li>
+                                                    <li>Connected two banking apps by implementing a flow using a QR scanner on the B2B side and a QR code generator on the
+                                                        B2C side</li>
+                                                    <li>Developed several payment pages for various use cases</li>
+                                                    <li>Implemented numerous payment-related and supporting features</li>
                                                     <li class="details">
                                                         <input type="checkbox" id="nix-senior-tech-stack">
                                                         <label for="nix-senior-tech-stack" class="summary">Tech
@@ -529,11 +538,15 @@
                                                 <p><em>August 2021 – April 2022</em> <sup class="period"></sup></p>
                                                 <p><strong>Project's Lead Flutter Developer</strong></p>
                                                 <ul>
-                                                    <li>Coordinated and led the project</li>
+                                                    <li>Coordinated and led a suite of mobile apps focused on language learning for beginners</li>
+                                                    <li>Conducted A/B testing using Google Analytics to compare feature performance and optimize user experience</li>
+                                                    <li>Deployed Android and iOS apps</li>
+                                                    <li>Worked with CodeMagic for builds</li>
+                                                    <li>Created interactive exercises using CustomPainter, animations, TTS, and STT</li>
+                                                    <li>Updated a pub.dev library for GDPR consent compliance</li>
                                                     <li>Provided mentoring & conducted interviews</li>
-                                                    <li>Revised architecture</li>
-                                                    <li>Used Google Analytics for A/B testing</li>
-                                                    <li>Deployed CI/CD via Codemagic</li>
+                                                    <li>Participated in business discussions related to ad revenue conversions</li>
+                                                    <li>Implemented and refactored many exercise-related and supporting features</li>
                                                     <li class="details">
                                                         <input type="checkbox" id="mobiteach-lead-tech-stack">
                                                         <label for="mobiteach-lead-tech-stack" class="summary">Tech
